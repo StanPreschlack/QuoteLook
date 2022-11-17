@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: rgb(135, 135, 234);
+  display: flex;
+  flex-direction: column;
+}
+form {
+  position: relative;
+  left: 50%;
+  top: 50px;
+  width: 50vw;
+  min-width: 200px;
+  height: 20vh;
+  transform: translateX( -50%);
+  align-items: center;
+  text-align: center;
+}
+form p {
+  font-size: 0.75em;
+}
+input {
+  position: relative;
+  height: 50px;
+  font-size: 2em;
+  width: 50vw;
+  background-color: rgb(135, 135, 234);
+  border-radius: none;
+  border: none;
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+}
+input:focus{
+  outline-offset: 0px !important;
+  outline: 1px solid rgb(128, 0, 255) !important;
+}
+input[type=submit] {
+  margin-top: 20px;
+  background: rgb(135, 135, 234);
+  height: 40px;
+  font-size: 1em;
+  cursor: pointer;
+  font-weight: 900;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+  transition: 0.5s;
+  max-width: 500px;
+}
+input[type=text]:hover {
+  box-shadow: rgb(128, 0, 255) 0px 1px 4px, rgb(128, 0, 255) 0px 0px 0px 3px;
+}
+input[type=submit]:hover {
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  font-size: calc(1em + 10px);
+}
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: white;
+  opacity: 1;
+}
+ul {
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  margin-top: 10vh;
+  bottom: 25px;
+  text-align: center;
+  list-style:none;
+}
+li {
+  margin: 25px;
+}
+@media(max-height: 800px) {
+  ul {
+    top: 20vh;
+  }
+}
