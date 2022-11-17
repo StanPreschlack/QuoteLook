@@ -7,7 +7,7 @@ async function getQuotes(db) {
     doc.data()
   );
 }
-
+//@ts-ignore
 let q = await getQuotes(db);
 </script>
 
